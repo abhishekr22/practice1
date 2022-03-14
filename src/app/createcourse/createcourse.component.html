@@ -1,0 +1,40 @@
+
+<form #empForm="ngForm" (ngSubmit)="onSubmit()">
+    <h1>Course Registration Form</h1>
+<div class="emp">
+   <br>
+    <table>
+      
+      <tr>
+        <td> <label> Course ID </label></td>
+        <input type="text" class="form-control" placeholder="Enter CourseID" name="courseid" id="courseid"  [(ngModel)]="course.courseid" required /> 
+  
+      </tr> 
+
+      <br>
+      <tr>
+        <td> <label> Course Name </label></td>
+        <input type="text" class="form-control" placeholder="Enter Course Name" name="coursename" id="coursename"  [(ngModel)]="course.coursename" required /> 
+  
+          </tr>
+      <br>
+      <tr>
+        <td> <label> Credits </label></td>
+        <input type="text" class="form-control" placeholder="Enter Credits" name="credits" id="credits"  [(ngModel)]="course.credits" required /> 
+  
+
+        </tr>
+      <br>
+      <tr>
+        <td> <label> Instructor Name </label></td>
+        <input type="text" class="form-control" placeholder="Enter Instructor Name" name="instructorname" id="instructorname" [(ngModel)]="course.instructorname" required /> 
+  
+      </tr> 
+      <br>
+      <tr>  
+          <td><input type = "submit"  name="submit" value="Submit" style="margin-left: 100%;  width: 100px;"></td>
+          
+      </tr>
+      </table>
+</div>
+</form>

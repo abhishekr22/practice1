@@ -1,0 +1,26 @@
+<br>
+<h2>All Courses</h2>
+<br>
+<div class="container">
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">CourseID</th>
+        <th scope="col">CourseName</th>
+        <th scope="col">Credits</th>
+        <th scope="col">InstructorName</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let course of courses">
+        <td>{{course.courseid}}</td>
+        <td>{{course.coursename}}</td>
+        <td>{{course.credits}}</td>
+        <td>{{course.instructorname}}</td>
+        <td><button type="button" class="btn btn-info" (click) = "deletecourse(course.courseid)" name="Delete" style="background-color: red;color: white;">DELETE</button></td>
+      </tr>
+    </tbody>
+  </table>
+      
+</div>
